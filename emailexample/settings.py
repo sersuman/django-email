@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'send',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_HOST ='smtp.hushmail.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'sumanshrestha670@gmail.com'
+EMAIL_HOST_PASSWORD = 'suman0913' 
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
